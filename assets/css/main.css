@@ -1182,7 +1182,13 @@ input, select, textarea {
 		#bg:after {
 			background-position: 68% center;
 		}
+	}
 
+	@media screen and (min-width: 737px) and (max-width: 980px) {
+
+		#bg:after {
+			background-position: 78% center;
+		}
 	}
 
 /* Wrapper */
