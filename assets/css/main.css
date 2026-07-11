@@ -179,7 +179,7 @@ input, select, textarea {
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
-		text-transform: uppercase;
+		text-transform: none;
 		letter-spacing: 0.2rem;
 	}
 
@@ -1329,7 +1329,7 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				text-transform: none;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
@@ -1469,7 +1469,7 @@ input, select, textarea {
 				#header .content .inner {
 					padding: 2.5rem 0;
 				}
-
+			
 				#header nav ul {
 					-moz-flex-direction: column;
 					-webkit-flex-direction: column;
