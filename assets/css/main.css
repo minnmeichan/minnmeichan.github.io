@@ -1295,8 +1295,8 @@ input, select, textarea {
             justify-content: center;
             align-items: center;
 
-            width: 9rem;
-            height: 9rem;
+            width: 10rem;
+            height: 10rem;
 
             border: solid 1px #ffffff;
             border-radius: 18px;
