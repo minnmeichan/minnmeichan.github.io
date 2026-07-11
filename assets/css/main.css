@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -140,8 +140,8 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
+		color: #eeeeee;
+		font-family: "Noto Sans SC", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #e8b7ff;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -1014,8 +1014,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px #e8b7ff;
+        color: #e8b7ff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -1139,7 +1139,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(30, 20, 50, 0.45), rgba(30, 20, 50, 0.45)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(30, 20, 50, 0.25), rgba(30, 20, 50, 0.25)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1343,13 +1343,13 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 1px #e8b7ff;
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px #e8b7ff;
 			}
 
 				#header nav ul li:first-child {
@@ -1546,8 +1546,8 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(20, 15, 35, 0.75);
-			border-radius: 4px;
+			background-color: rgba(20, 20, 35, 0.65);
+			border-radius: 16px;
 			opacity: 0;
 		}
 
