@@ -45,7 +45,7 @@ https://minnmeichan.github.io/
 
 ## 📷 网站截图
 
-其实我感觉不需要截图。
+![网站截图](images/screenshot.png)
 
 ---
 
