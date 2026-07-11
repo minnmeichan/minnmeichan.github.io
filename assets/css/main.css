@@ -1291,12 +1291,17 @@ input, select, textarea {
 			}
 
 		#header .logo {
-	     width: 8rem;
-	     height: 8rem;
-	     border: solid 1px #ffffff;
-    	 border-radius: 18px;
-	     overflow: hidden;
-        }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 8rem;
+            height: 8rem;
+
+            border: solid 1px #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+		}
         
         #header .logo img {
 	     width: 100%;
