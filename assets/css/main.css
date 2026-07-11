@@ -1180,7 +1180,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#bg:after {
-			background-position: 70% center;
+			background-position: 68% center;
 		}
 
 	}
