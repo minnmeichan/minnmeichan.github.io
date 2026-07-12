@@ -18,4 +18,5 @@ jobs:
       - name: Push to Gitee
         run: |
           git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/minnmeichan/minnmeichan.git
-          git push gitee main --force
+          git config --global http.postBuffer 524288000
+          git push --verbose gitee main --force
