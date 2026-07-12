@@ -3,8 +3,9 @@
 > 我的个人网站，记录学习过程、项目作品，以及一些感兴趣的内容。
 
 🌐 网站地址：
-https://minnmeichan.github.io/
-https://minnmeichan.pages.dev/
+
+- Cloudflare Pages: https://minnmeichan.pages.dev/
+- GitHub Pages: https://minnmeichan.github.io/
 
 ---
 
