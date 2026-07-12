@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Mirror to Gitee
-        uses: Yikun/hub-mirror-action@master
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          src: github/minnmeichan/minnmeichan.github.io
-          dst: gitee/minnmeichan/minnmeichan
-          dst_key: ${{ secrets.GITEE_TOKEN }}
-          force_update: true
+          fetch-depth: 0
+
+      - name: Push to Gitee
+        run: |
+          git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/minnmeichan/minnmeichan.git
+          git push gitee main:main --force
