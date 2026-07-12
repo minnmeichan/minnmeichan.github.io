@@ -4,6 +4,7 @@
 
 🌐 网站地址：
 https://minnmeichan.github.io/
+https://minnmeichan.pages.dev/
 
 ---
 
