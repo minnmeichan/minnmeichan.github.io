@@ -6,6 +6,7 @@
 
 - Cloudflare Pages: https://minnmeichan.pages.dev/
 - GitHub Pages: https://minnmeichan.github.io/
+- 国内镜像源：https://gitee.com/minnmeichan/minnmeichan
 
 ---
 
