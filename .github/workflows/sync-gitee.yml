@@ -22,11 +22,7 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 
-      - name: Test SSH
-        run: |
-          ssh -vvv -T git@gitee.com || true
-
       - name: Push to Gitee
         run: |
           git remote add gitee git@gitee.com:minnmeichan/minnmeichan.git
-          GIT_SSH_COMMAND="ssh -vvv" git push --progress gitee main:main --force
+          git push --progress gitee main:main
