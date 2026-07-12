@@ -14,6 +14,6 @@ jobs:
         uses: Yikun/hub-mirror-action@master
         with:
           src: github/minnmeichan
-          dst: gitee/minnmeichan/minnmeichan
+          dst: gitee/minnmeichan
           dst_key: ${{ secrets.GITEE_TOKEN }}
           force_update: true
