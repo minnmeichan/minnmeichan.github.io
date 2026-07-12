@@ -25,6 +25,7 @@
 - CSS3
 - JavaScript
 - GitHub Pages
+- Cloudflare Pages
 
 ---
 
@@ -53,7 +54,7 @@
 
 ## 🚀 部署
 
-本项目使用 GitHub Pages 部署。
+本项目使用 Cloudflare Pages 进行静态网站部署，并通过 GitHub 实现自动化持续部署。
 
 ---
 
