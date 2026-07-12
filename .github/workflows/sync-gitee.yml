@@ -13,7 +13,7 @@ jobs:
       - name: Sync repository to Gitee
         uses: Yikun/hub-mirror-action@master
         with:
-          src: github/${{ github.repository }}
+          src: github/minnmeichan
           dst: gitee/minnmeichan/minnmeichan
           dst_key: ${{ secrets.GITEE_TOKEN }}
           force_update: true
