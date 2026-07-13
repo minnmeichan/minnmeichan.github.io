@@ -96,7 +96,9 @@
 			<script src="../assets/js/main.js"></script>
 			<script>
 				window.addEventListener('load', function() {
-					document.body.classList.remove('is-entering');
+					setTimeout(function() {
+						document.body.classList.remove('is-entering');
+					}, 300);
 				});
 			</script>
 
