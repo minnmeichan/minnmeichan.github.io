@@ -951,6 +951,26 @@ input, select, textarea {
 
 		}
 
+/* Pagination */
+
+	.pagination {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.pagination span,
+	.pagination a {
+		display: inline-block;
+		width: 2.5rem;
+		height: 2.5rem;
+		line-height: 2.5rem;
+		border: solid 1px #e8b7ff;
+		border-radius: 4px;
+		color: #e8b7ff;
+		text-align: center;
+		margin: 0 0.25rem;
+	}
+
 /* Icons */
 
 	ul.icons {
