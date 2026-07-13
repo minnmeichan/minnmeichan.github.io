@@ -7,13 +7,6 @@
 <html>
 	<head>
 		<title>Nyanners的小站</title>
-
-		<style>
-			html, body {
-			background: #1b1f22;
-			}
-		</style>
-		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -25,13 +18,13 @@
 			}
 			
 			body.is-entering #wrapper {
-				opacity: 1;
-				transform: none;
+				opacity: 0;
+				transform: scale(1.05);
 			}
 
 			body.is-entering #bg {
-				filter: none;
-				transform: none;
+				filter: blur(5px);
+				transform: scale(1.05);
 			}
 		</style>
 		
@@ -96,9 +89,7 @@
 			<script src="../assets/js/main.js"></script>
 			<script>
 				window.addEventListener('load', function() {
-					setTimeout(function() {
-						document.body.classList.remove('is-entering');
-					}, 300);
+					document.body.classList.remove('is-entering');
 				});
 			</script>
 
