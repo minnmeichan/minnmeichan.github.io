@@ -272,10 +272,16 @@
 							.then(function(html) {
 
 								document.querySelector('#main').innerHTML = html;
+
+								history.pushState(
+									{ page: 'website-record' },
+									'',
+									'#website-record'
+								);
 							});
 					});
 				});
-			</script>
+			</script> 
 
 	</body>
 </html>
