@@ -11,6 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#main {
+				transition: opacity 0.4s ease;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -260,11 +265,13 @@
 					link.addEventListener('click', function(event) {
 						event.preventDefault();
 
-						document.body.classList.add('is-leaving');
-
-						setTimeout(function() {
-							window.location.href = link.href;
-						}, 400);
+						fetch(link.href)
+							.then(function(response) {
+								return response.text();
+							})
+							.then(function(html) {
+								console.log(html);
+							});
 					});
 				});
 			</script>
