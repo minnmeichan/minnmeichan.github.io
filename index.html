@@ -132,7 +132,7 @@
 
 
 								<h3>
-									<a href="articles/website-record.html#website-record">
+									<a href="articles/website-record.html#website-record" class="page-transition">
 										我的个人网站制作记录
 									</a>
 								</h3>
@@ -255,6 +255,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.querySelectorAll('.page-transition').forEach(function(link) {
+					link.addEventListener('click', function() {
+						document.body.classList.add('is-leaving');
+					});
+				});
+			</script>
 
 	</body>
 </html>
