@@ -20,28 +20,19 @@
 				background: #1b1f22;
 			}
 			
-			body.is-entering #wrapper {
-				opacity: 0;
-				transform: scale(1.05);
-			}
-
-			body.is-entering #bg {
-				filter: blur(5px);
-				transform: scale(1.05);
-			}
 		</style>
 		
 	</head>
-	<body class="is-entering">
+	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 				
 				<!-- Main -->
-					<div id="main" class="active">
+					<div id="main">
 						
 						<!-- Article -->
-							<article id="website-record" class="active">
+							<article id="website-record">
 								
 								<ul class="actions">
 									<li>
@@ -90,11 +81,6 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-			<script>
-				window.addEventListener('load', function() {
-					document.body.classList.remove('is-entering');
-				});
-			</script>
 
 	</body>
 </html>
