@@ -1786,3 +1786,14 @@ body.is-leaving #wrapper {
 #footer .copyright a {
 	border-bottom: none;
 }
+
+/* Avatar anime glow */
+
+#header .logo {
+	box-shadow: 0 0 20px rgba(232, 183, 255, 0.5);
+	transition: 0.3s ease;
+}
+
+#header .logo:hover {
+	box-shadow: 0 0 35px rgba(232, 183, 255, 0.8);
+}
