@@ -132,7 +132,7 @@
 
 
 								<h3>
-									<a href="#website-record">
+									<a href="#website-record" class="load-article">
 										我的个人网站制作记录
 									</a>
 								</h3>
@@ -258,6 +258,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.querySelector('.load-article').addEventListener('click', function() {
+
+					fetch('articles/website-record-content.html')
+						.then(function(response) {
+							return response.text();
+						})
+						.then(function(html) {
+
+							document.querySelector('#website-record').innerHTML = html;
+
+						});
+
+				});
+			</script>
 
 	</body>
 </html>
