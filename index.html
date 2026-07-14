@@ -51,7 +51,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<article id="website-record" style="display:none;"></article>
+						<article id="website-record"></article>
 
 						<!-- Intro -->
 							<article id="intro">
@@ -274,9 +274,9 @@
 							.then(function(html) {
 								document.querySelector('#website-record').innerHTML = html;
 
-								document.querySelector('#articles').style.display = 'none';
+								document.querySelector('#articles').classList.remove('active');
 
-								document.querySelector('#website-record').style.display = 'block';
+								document.querySelector('#website-record').classList.add('active');
 							});
 					});
 				});
