@@ -271,7 +271,7 @@
 
 								document.querySelector('#website-record').innerHTML = html;
 
-								alert(html);
+								document.querySelector('#website-record').classList.add('active');
 								
 								history.pushState(
 									{ page: 'website-record' },
