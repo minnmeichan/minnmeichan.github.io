@@ -266,8 +266,6 @@
 				document.querySelector('.page-transition').addEventListener('click', function(event) {
 					event.preventDefault();
 
-					alert("点击成功");
-
 					fetch("articles/website-record-content.html")
 						.then(function(response) {
 							return response.text();
@@ -275,7 +273,7 @@
 						.then(function(html) {
 							document.querySelector('#website-record').innerHTML = html;
 
-							alert("加载成功");
+							document.querySelector('#website-record').classList.add('active');
 						});
 				});
 			</script>
