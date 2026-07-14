@@ -1926,3 +1926,7 @@ body.is-leaving #wrapper {
 .article-card p {
 	margin-bottom: 0;
 }
+
+.button {
+	-webkit-tap-highlight-color: transparent;
+}
