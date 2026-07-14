@@ -272,11 +272,11 @@
 								return response.text();
 							})
 							.then(function(html) {
+								
 								document.querySelector('#website-record').innerHTML = html;
 
-								document.querySelector('#articles').classList.remove('active');
-
-								document.querySelector('#website-record').classList.add('active');
+								console.log("加载成功");
+								
 							});
 					});
 				});
