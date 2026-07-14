@@ -1854,5 +1854,5 @@ body.is-leaving #wrapper {
 	font-size: 1.25rem;
 	color: #e8b7ff;
 	letter-spacing: 0.1rem;
-	text-shadow: 0 0 8px rgba(232, 183, 255, 0.5);
+	text-shadow: 0 0 4px rgba(232, 183, 255, 0.3);
 }
