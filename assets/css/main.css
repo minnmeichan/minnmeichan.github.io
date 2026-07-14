@@ -1847,3 +1847,12 @@ body.is-leaving #wrapper {
 .project-card h3 {
 	color: #e8b7ff;
 }
+
+/* Project title */
+
+.project-title {
+	font-size: 1.25rem;
+	color: #e8b7ff;
+	letter-spacing: 0.1rem;
+	text-shadow: 0 0 8px rgba(232, 183, 255, 0.5);
+}
