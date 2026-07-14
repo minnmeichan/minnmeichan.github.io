@@ -132,7 +132,7 @@
 
 
 								<h3>
-									<a href="articles/website-record-content.html" class="page-transition">
+									<a href="#website-record">
 										我的个人网站制作记录
 									</a>
 								</h3>
@@ -237,7 +237,7 @@
 								-->
 							</article>
 						
-							<article id="website-record" class="active">
+							<article id="website-record">
 							</article>
 						
 					</div>
@@ -258,34 +258,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				document.querySelectorAll('.page-transition').forEach(function(link) {
-					link.addEventListener('click', function(event) {
-						event.preventDefault();
-
-						fetch(link.href)
-							.then(function(response) {
-								return response.text();
-							})
-							.then(function(html) {
-
-								var article = document.querySelector('#website-record');
-
-								article.innerHTML = html;
-
-								article.classList.add('active');
-
-								document.querySelector('#main').classList.add('active');
-								
-								history.pushState(
-									{ page: 'website-record' },
-									'',
-									'#website-record'
-								);
-							});
-					});
-				});
-			</script>
 
 	</body>
 </html>
