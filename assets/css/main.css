@@ -1797,3 +1797,9 @@ body.is-leaving #wrapper {
 #header .logo:hover {
 	box-shadow: 0 0 35px rgba(232, 183, 255, 0.8);
 }
+
+/* Site title glow */
+
+#header h1 {
+	text-shadow: 0 0 12px rgba(232, 183, 255, 0.6);
+}
