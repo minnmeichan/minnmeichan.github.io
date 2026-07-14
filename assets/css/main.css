@@ -1911,3 +1911,14 @@ body.is-leaving #wrapper {
 #articles p {
 	margin-bottom: 1.5rem;
 }
+
+/* Article card spacing fix */
+
+.article-card h3 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.article-card p {
+	margin-bottom: 0;
+}
