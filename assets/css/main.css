@@ -1822,18 +1822,26 @@ body.is-leaving #wrapper {
 /* 项目按钮 */
 .button {
 	background-color: rgba(232, 183, 255, 0.08);
-	transition: 0.3s ease;
+	transition: 
+		background-color 0.2s ease,
+		box-shadow 0.2s ease,
+		transform 0.1s ease;
+	box-shadow: inset 0 0 0 1px #e8b7ff;
 }
 
 .button:hover {
-	background-color: rgba(232, 183, 255, 0.15);
-	box-shadow: inset 0 0 0 1px #e8b7ff;
+	background-color: rgba(232, 183, 255, 0.18);
+	box-shadow: 
+		inset 0 0 0 1px #e8b7ff,
+		0 0 12px rgba(232,183,255,0.5);
 }
 
-.button:focus {
-	outline: none;
-	background-color: rgba(232, 183, 255, 0.08);
-	box-shadow: inset 0 0 0 1px #e8b7ff;
+.button:active {
+	transform: scale(0.96);
+	background-color: rgba(232, 183, 255, 0.25);
+	box-shadow:
+		inset 0 0 0 1px #e8b7ff,
+		0 0 18px rgba(232,183,255,0.7);
 }
 
 /* Works project card */
