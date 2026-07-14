@@ -1762,6 +1762,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+/* =========================
+   Custom Style
+   ========================= */
+
 /* Page transition */
 
 body.is-leaving #bg {
@@ -1895,14 +1899,6 @@ body.is-leaving #wrapper {
 	box-shadow: 0 0 12px rgba(232, 183, 255, 0.25);
 }
 
-.article-card h3 {
-	margin-bottom: 0.5rem;
-}
-
-.article-card p {
-	margin-bottom: 0;
-}
-
 /* Articles list style */
 
 #articles h3 {
@@ -1937,5 +1933,22 @@ body.is-leaving #wrapper {
 
 .button {
 	-webkit-tap-highlight-color: transparent;
-	box-shadow: inset 0 0 0 1px #e8b7ff;
+}
+
+/* Navigation rounded corners */
+
+#header nav ul {
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+/* Project card hover */
+
+#main article {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main article:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
