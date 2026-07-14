@@ -1856,3 +1856,13 @@ body.is-leaving #wrapper {
 	letter-spacing: 0.1rem;
 	text-shadow: 0 0 4px rgba(232, 183, 255, 0.3);
 }
+
+/* Work project spacing */
+
+#work p {
+	margin-bottom: 1.5rem;
+}
+
+#work .project-title {
+	margin-top: 1rem;
+}
