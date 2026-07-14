@@ -1890,3 +1890,24 @@ body.is-leaving #wrapper {
 .article-card p {
 	margin-bottom: 0;
 }
+
+/* Articles list style */
+
+#articles h3 {
+	font-size: 1.15rem;
+	margin-top: 2rem;
+	margin-bottom: 0.8rem;
+}
+
+#articles h3 a {
+	transition: 0.3s ease;
+}
+
+#articles h3 a:hover {
+	color: #e8b7ff;
+	text-shadow: 0 0 8px rgba(232,183,255,0.4);
+}
+
+#articles p {
+	margin-bottom: 1.5rem;
+}
