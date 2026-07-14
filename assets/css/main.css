@@ -1952,3 +1952,57 @@ body.is-leaving #wrapper {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
+
+/* Anime cat ears */
+
+#header .logo {
+	position: relative;
+	overflow: visible;
+}
+
+
+/* 外层猫耳 */
+
+.cat-ear {
+	position: absolute;
+	top: -1.8rem;
+	width: 3rem;
+	height: 3rem;
+	background: linear-gradient(135deg, #f3c7ff, #e8b7ff);
+	border: 1px solid #ffffff;
+	transform: rotate(45deg);
+	box-shadow: 0 0 15px rgba(232,183,255,0.5);
+	z-index: 0;
+}
+
+
+/* 内耳 */
+
+.cat-ear::after {
+	content: '';
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #ffb6d9;
+	left: 0.75rem;
+	top: 0.75rem;
+}
+
+
+/* 左右位置 */
+
+.cat-ear.left {
+	left: 1rem;
+}
+
+.cat-ear.right {
+	right: 1rem;
+}
+
+
+/* 保证头像在耳朵前面 */
+
+#header .logo img {
+	position: relative;
+	z-index: 1;
+}
