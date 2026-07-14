@@ -1895,8 +1895,8 @@ body.is-leaving #wrapper {
 
 #articles h3 {
 	font-size: 1.15rem;
-	margin-top: 2rem;
-	margin-bottom: 0.8rem;
+	margin-top: 0rem;
+	margin-bottom: 0.5rem;
 }
 
 #articles h3 a {
