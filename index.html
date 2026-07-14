@@ -269,9 +269,13 @@
 							})
 							.then(function(html) {
 
-								document.querySelector('#website-record').innerHTML = html;
+								var article = document.querySelector('#website-record');
 
-								document.querySelector('#website-record').classList.add('active');
+								article.innerHTML = html;
+
+								article.classList.add('active');
+
+								document.querySelector('#main').classList.add('active');
 								
 								history.pushState(
 									{ page: 'website-record' },
