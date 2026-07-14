@@ -262,6 +262,8 @@
 			<script>
 				document.querySelector('.load-article').addEventListener('click', function() {
 
+					event.preventDefault();
+
 					fetch('articles/website-record-content.html')
 						.then(function(response) {
 							return response.text();
@@ -269,6 +271,8 @@
 						.then(function(html) {
 
 							document.querySelector('#website-record').innerHTML = html;
+
+								window.location.hash = 'website-record';
 
 						});
 
