@@ -1826,8 +1826,8 @@ body.is-leaving #wrapper {
 }
 
 .button:hover {
-	background-color: rgba(232, 183, 255, 0.2);
-	box-shadow: 0 0 15px rgba(232, 183, 255, 0.5);
+	background-color: rgba(232, 183, 255, 0.15);
+	box-shadow: none;
 }
 
 /* Works project card */
