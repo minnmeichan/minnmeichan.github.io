@@ -1822,8 +1822,6 @@ body.is-leaving #wrapper {
 /* 项目按钮 */
 .button {
 	background-color: rgba(232, 183, 255, 0.08);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
 	transition: 0.3s ease;
 }
 
