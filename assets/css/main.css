@@ -1774,3 +1774,9 @@ body.is-leaving #wrapper {
 	opacity: 0;
 	transition: opacity 0.4s ease;
 }
+
+/* website record close button fix */
+
+#website-record .close {
+	border-bottom: none !important;
+}
