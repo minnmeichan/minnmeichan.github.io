@@ -1803,3 +1803,31 @@ body.is-leaving #wrapper {
 #header h1 {
 	text-shadow: 0 0 12px rgba(232, 183, 255, 0.6);
 }
+
+/* Anime glass effect */
+
+/* 顶部导航栏 */
+#header nav ul {
+	background-color: rgba(232, 183, 255, 0.08);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+#header nav ul li a:hover {
+	background-color: rgba(232, 183, 255, 0.2);
+	box-shadow: 0 0 12px rgba(232, 183, 255, 0.4);
+}
+
+
+/* 项目按钮 */
+.button {
+	background-color: rgba(232, 183, 255, 0.08);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	transition: 0.3s ease;
+}
+
+.button:hover {
+	background-color: rgba(232, 183, 255, 0.2);
+	box-shadow: 0 0 15px rgba(232, 183, 255, 0.5);
+}
