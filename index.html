@@ -137,7 +137,7 @@
 
 
 								<h3>
-									<a href="articles/website-record-content.html" class="page-transition">
+									<a href="articles/website-record-content.html">
 										我的个人网站制作记录
 									</a>
 								</h3>
@@ -262,21 +262,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				document.querySelector('.page-transition').addEventListener('click', function(event) {
-					event.preventDefault();
-
-					fetch("articles/website-record-content.html")
-						.then(function(response) {
-							return response.text();
-						})
-						.then(function(html) {
-							document.querySelector('#website-record').innerHTML = html;
-
-							document.querySelector('#main').classList.add('active');
-						});
-				});
-			</script>
-			 
+		
 	</body>
 </html>
