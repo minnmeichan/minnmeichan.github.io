@@ -269,16 +269,10 @@
 							})
 							.then(function(html) {
 
-								document.querySelector('#website-record').innerHTML = 
-									'<h2 class="major">动态测试</h2><p>这是JS插入的文字</p>';
-
-								document.querySelector('#main').classList.add('active');
-								document.querySelector('#website-record').classList.add('active');
+								document.querySelector('#main').innerHTML = html;
 
 								alert(html);
-
-								document.querySelector('#website-record').classList.add('active');
-
+								
 								history.pushState(
 									{ page: 'website-record' },
 									'',
