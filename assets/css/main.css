@@ -1827,7 +1827,7 @@ body.is-leaving #wrapper {
 
 .button:hover {
 	background-color: rgba(232, 183, 255, 0.15);
-	box-shadow: none;
+	box-shadow: inset 0 0 0 1px #e8b7ff;
 }
 
 .button:focus {
@@ -1929,4 +1929,5 @@ body.is-leaving #wrapper {
 
 .button {
 	-webkit-tap-highlight-color: transparent;
+	box-shadow: inset 0 0 0 1px #e8b7ff;
 }
