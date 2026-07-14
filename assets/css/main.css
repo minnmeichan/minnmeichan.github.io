@@ -1830,6 +1830,13 @@ body.is-leaving #wrapper {
 	box-shadow: none;
 }
 
+.button:active,
+.button:focus {
+	background-color: rgba(232, 183, 255, 0.15);
+	border-color: rgba(232, 183, 255, 0.4);
+	box-shadow: none;
+}
+
 /* Works project card */
 
 .project-card {
