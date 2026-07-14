@@ -1,0 +1,15 @@
+{
+    "name": "Nyannersの猫窝",
+    "short_name": "猫窝",
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#1b1f22",
+    "theme_color": "#1b1f22"
+}
