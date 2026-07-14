@@ -1872,7 +1872,7 @@ body.is-leaving #wrapper {
 .article-card {
 	background: rgba(232, 183, 255, 0.035);
 	border-radius: 10px;
-	padding: 1.25rem;
+	padding: 1rem;
 	margin-bottom: 1rem;
 	border: 1px solid rgba(232, 183, 255, 0.15);
 	transition: 0.3s ease;
