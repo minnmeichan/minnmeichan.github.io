@@ -132,7 +132,7 @@
 
 
 								<h3>
-									<a href="articles/website-record.html#website-record" class="page-transition">
+									<a href="articles/website-record-content.html" class="page-transition">
 										我的个人网站制作记录
 									</a>
 								</h3>
@@ -237,6 +237,10 @@
 								-->
 							</article>
 
+							<article id="website-record">
+							
+							</article>
+
 					</div>
 
 				<!-- Footer -->
@@ -260,11 +264,20 @@
 					link.addEventListener('click', function(event) {
 						event.preventDefault();
 
-						document.body.classList.add('is-leaving');
+						fetch(link.href)
+							.then(function(response) {
+								return response.text();
+							})
+							.then(function(html) {
 
-						setTimeout(function() {
-							window.location.href = link.href;
-						}, 400);
+								document.querySelector('#website-record').innerHTML = html;
+
+								history.pushState(
+									{ page: 'website-record' },
+									'',
+									'#website-record'
+								);
+							});
 					});
 				});
 			</script>
