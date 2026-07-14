@@ -238,7 +238,6 @@
 							</article>
 						
 							<article id="website-record" class="active">
-								<h2 class="major">测试文字</h2>
 							</article>
 						
 					</div>
@@ -273,6 +272,8 @@
 								document.querySelector('#website-record').innerHTML = html;
 
 								alert(html);
+
+								document.querySelector('#website-record').classList.add('active');
 
 								history.pushState(
 									{ page: 'website-record' },
