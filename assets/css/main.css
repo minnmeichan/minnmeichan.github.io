@@ -1830,10 +1830,9 @@ body.is-leaving #wrapper {
 	box-shadow: none;
 }
 
-.button:active,
 .button:focus {
-	background-color: rgba(232, 183, 255, 0.15);
-	border-color: rgba(232, 183, 255, 0.4);
+	outline: none;
+	background-color: rgba(232, 183, 255, 0.08);
 	box-shadow: none;
 }
 
@@ -1926,12 +1925,4 @@ body.is-leaving #wrapper {
 
 .article-card p {
 	margin-bottom: 0;
-}
-
-.button:active,
-.button:focus,
-.button:focus-visible {
-	border: 1px solid rgba(232, 183, 255, 0.4) !important;
-	background-color: rgba(232, 183, 255, 0.15) !important;
-	box-shadow: none !important;
 }
