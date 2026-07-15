@@ -1964,5 +1964,5 @@ body.is-leaving #wrapper {
 	background: url("../../images/avatar-frame.png") center/contain no-repeat;
 	z-index: 10;
 	pointer-events: none;
-	transform: scale(1.4);
+	transform: scale(1.6);
 }
