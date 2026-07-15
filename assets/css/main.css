@@ -1414,7 +1414,7 @@ input, select, textarea {
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
-			box-shadow: 0 0 8px rgba(232, 183, 255, 0.35);
+			box-shadow: 0 0 30px rgba(232, 183, 255, 0.22);
 		}
 
 			#header .content .inner {
