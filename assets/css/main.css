@@ -1415,6 +1415,7 @@ input, select, textarea {
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
+			z-index: 1;
 		}
 
 			#header .content .inner {
