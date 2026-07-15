@@ -1391,8 +1391,6 @@ input, select, textarea {
 			border-radius: 50%;
 			overflow: visible;
 			position: relative;
-
-			background: red !important;
 		}
         
         #header .logo img {
@@ -1401,17 +1399,6 @@ input, select, textarea {
 			object-fit: cover;
 			display: block;
 			border-radius: 50%;
-		}
-
-		/* 头像框 */
-
-		.logo::before {
-			content: '';
-			position: absolute;
-			inset: 0;
-			background: red;
-			z-index: 99;
-			pointer-events: none;
 		}
 
 			#header .logo .icon:before {
