@@ -1955,7 +1955,7 @@ body.is-leaving #wrapper {
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
-/* Avatar frame test */
+/* Avatar frame */
 
 #header .logo::after {
 	content: "";
