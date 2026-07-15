@@ -1229,10 +1229,10 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.5s ease-in-out, -moz-filter 0.5s ease-in-out;
-			-webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
-			-ms-transition: -ms-transform 0.5s ease-in-out, -ms-filter 0.5s ease-in-out;
-			transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+			-moz-transition: -moz-transform 0.4s ease-in-out, -moz-filter 0.4s ease-in-out;
+			-webkit-transition: -webkit-transform 0.4s ease-in-out, -webkit-filter 0.4s ease-in-out;
+			-ms-transition: -ms-transform 0.4s ease-in-out, -ms-filter 0.4s ease-in-out;
+			transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
 			background-image: url("../../images/bg.jpg");
 			background-position: center;
 			background-size: cover;
@@ -1952,7 +1952,7 @@ body.is-leaving #wrapper {
 
 #main article {
 	transition:
-		opacity 0.5s ease-in-out,
+		opacity 0.4s ease-in-out,
 		transform 0.3s ease,
 		box-shadow 0.3s ease;
 }
