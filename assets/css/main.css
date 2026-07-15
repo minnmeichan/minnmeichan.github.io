@@ -1982,7 +1982,7 @@ body.is-leaving #wrapper {
 	content: "";
 	position: absolute;
 	inset: -15px;
-	background: rgba(232, 183, 255, 0.14);
+	background: rgba(232, 183, 255, 0.16);
 	filter: blur(35px);
 	z-index: -1;
 	pointer-events: none;
