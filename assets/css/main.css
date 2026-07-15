@@ -1973,6 +1973,7 @@ body.is-leaving #wrapper {
 
 #header .content {
 	position: relative;
+	overflow: visible;
 }
 
 #header .content::before {
@@ -1981,6 +1982,6 @@ body.is-leaving #wrapper {
 	inset: -20px;
 	background: rgba(232, 183, 255, 0.08);
 	filter: blur(25px);
-	z-index: -1;
+	z-index: 0;
 	pointer-events: none;
 }
