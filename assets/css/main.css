@@ -1370,6 +1370,7 @@ input, select, textarea {
 				height: calc(3.5rem + 1px);
 				background: rgba(232, 183, 255, 0.75);
 				box-shadow: 0 0 8px rgba(232, 183, 255, 0.6);
+				z-index: 2;
 			}
 
 		#header > :first-child {
@@ -1415,7 +1416,6 @@ input, select, textarea {
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
-			z-index: 1;
 		}
 
 			#header .content .inner {
