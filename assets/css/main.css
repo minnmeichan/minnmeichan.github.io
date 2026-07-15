@@ -1408,13 +1408,13 @@ input, select, textarea {
 			}
 
 		#header .content {
+			position: relative;
 			border-style: solid;
 			border-color: rgba(232, 183, 255, 0.75);
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
-			box-shadow: 0 0 35px rgba(232, 183, 255, 0.18);
 		}
 
 			#header .content .inner {
@@ -1977,14 +1977,12 @@ body.is-leaving #wrapper {
 	overflow: visible;
 }
 
-/*
 #header .content::before {
 	content: "";
 	position: absolute;
-	inset: -20px;
-	background: rgba(232, 183, 255, 0.08);
-	filter: blur(25px);
+	inset: -15px;
+	background: rgba(232, 183, 255, 0.12);
+	filter: blur(35px);
 	z-index: -1;
 	pointer-events: none;
 }
-*/
