@@ -1811,7 +1811,7 @@ body.is-leaving #wrapper {
 /* Site title glow */
 
 #header h1 {
-	text-shadow: 0 0 14px rgba(232, 183, 255, 0.75);
+	text-shadow: 0 0 10px rgba(232, 183, 255, 0.45);
 }
 
 /* Anime glass effect */
