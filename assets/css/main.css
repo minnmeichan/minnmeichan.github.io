@@ -1409,6 +1409,7 @@ input, select, textarea {
 
 		#header .content {
 			position: relative;
+			z-index: 1;
 			border-style: solid;
 			border-color: rgba(232, 183, 255, 0.75);
 			border-top-width: 1px;
@@ -1981,8 +1982,8 @@ body.is-leaving #wrapper {
 	content: "";
 	position: absolute;
 	inset: -15px;
-	background: rgba(232, 183, 255, 0.12);
+	background: rgba(232, 183, 255, 0.14);
 	filter: blur(35px);
-	z-index: -1;
+	z-index: 0;
 	pointer-events: none;
 }
