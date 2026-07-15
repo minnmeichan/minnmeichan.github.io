@@ -1864,6 +1864,9 @@ body.is-leaving #wrapper {
 	margin-bottom: 2rem;
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
+
+	will-change: backdrop-filter;
+	transform: translateZ(0);
 }
 
 .project-card h3 {
