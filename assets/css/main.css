@@ -1388,8 +1388,9 @@ input, select, textarea {
 			height: 10rem;
 			
 			border: solid 1px #ffffff;
-			border-radius: 18px;
-			overflow: hidden;
+			border-radius: 50%;
+			overflow: visible;
+			position: relative;
 		}
         
         #header .logo img {
@@ -1397,6 +1398,7 @@ input, select, textarea {
 			height: 100%;
 			object-fit: cover;
 			display: block;
+			border-radius: 50%;
 		}
 
 			#header .logo .icon:before {
