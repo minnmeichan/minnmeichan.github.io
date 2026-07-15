@@ -1414,7 +1414,6 @@ input, select, textarea {
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
-			box-shadow: 0 0 30px rgba(232, 183, 255, 0.22);
 		}
 
 			#header .content .inner {
@@ -1968,4 +1967,20 @@ body.is-leaving #wrapper {
 	z-index: 10;
 	pointer-events: none;
 	transform: translateX(-1px) translateY(-5px) scale(1.56);
+}
+
+/* Title area soft glow */
+
+#header .content {
+	position: relative;
+}
+
+#header .content::before {
+	content: "";
+	position: absolute;
+	inset: -20px;
+	background: rgba(232, 183, 255, 0.08);
+	filter: blur(25px);
+	z-index: -1;
+	pointer-events: none;
 }
