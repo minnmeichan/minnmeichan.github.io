@@ -1391,6 +1391,8 @@ input, select, textarea {
 			border-radius: 50%;
 			overflow: visible;
 			position: relative;
+
+			background: red !important;
 		}
         
         #header .logo img {
