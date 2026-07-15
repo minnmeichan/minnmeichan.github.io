@@ -1951,9 +1951,11 @@ body.is-leaving #wrapper {
 /* Project card hover */
 
 #main article {
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition:
+		opacity 0.5s ease-in-out,
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
-
 #main article:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
