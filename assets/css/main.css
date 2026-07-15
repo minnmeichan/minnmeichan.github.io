@@ -1961,10 +1961,7 @@ body.is-leaving #wrapper {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url("../images/avatar-frame.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+	background: red;
 	z-index: 99;
 	pointer-events: none;
 }
