@@ -1416,6 +1416,7 @@ input, select, textarea {
 			border-bottom-width: 1px;
 			width: 34rem;
 			max-width: 100%;
+			box-shadow: 0 0 35px rgba(232, 183, 255, 0.14);
 		}
 
 			#header .content .inner {
@@ -1978,6 +1979,7 @@ body.is-leaving #wrapper {
 	overflow: visible;
 }
 
+/*
 #header .content::before {
 	content: "";
 	position: absolute;
@@ -1987,3 +1989,4 @@ body.is-leaving #wrapper {
 	z-index: 0;
 	pointer-events: none;
 }
+*/
