@@ -1811,7 +1811,7 @@ body.is-leaving #wrapper {
 /* Site title glow */
 
 #header h1 {
-	text-shadow: 0 0 12px rgba(232, 183, 255, 0.6);
+	text-shadow: 0 0 14px rgba(232, 183, 255, 0.75);
 }
 
 /* Anime glass effect */
@@ -1986,4 +1986,10 @@ body.is-leaving #wrapper {
 	filter: blur(35px);
 	z-index: -1;
 	pointer-events: none;
+}
+
+/* Home title spacing */
+
+#header h1 {
+	letter-spacing: 0.15rem;
 }
