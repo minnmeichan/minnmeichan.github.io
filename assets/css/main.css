@@ -1984,6 +1984,6 @@ body.is-leaving #wrapper {
 	inset: -15px;
 	background: rgba(232, 183, 255, 0.14);
 	filter: blur(35px);
-	z-index: -1;
+	z-index: 0;
 	pointer-events: none;
 }
