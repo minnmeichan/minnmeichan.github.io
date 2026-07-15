@@ -1955,8 +1955,13 @@ body.is-leaving #wrapper {
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
-/* CSS test */
+/* Avatar frame test */
 
-#header h1 {
-	color: red !important;
+#header .logo::after {
+	content: "";
+	position: absolute;
+	inset: -8px;
+	background: url("../../images/avatar-frame.png") center/contain no-repeat;
+	z-index: 10;
+	pointer-events: none;
 }
