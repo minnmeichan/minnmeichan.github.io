@@ -1976,6 +1976,7 @@ body.is-leaving #wrapper {
 	overflow: visible;
 }
 
+/*
 #header .content::before {
 	content: "";
 	position: absolute;
@@ -1985,3 +1986,4 @@ body.is-leaving #wrapper {
 	z-index: -1;
 	pointer-events: none;
 }
+*/
