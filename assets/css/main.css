@@ -1370,7 +1370,6 @@ input, select, textarea {
 				height: calc(3.5rem + 1px);
 				background: rgba(232, 183, 255, 0.75);
 				box-shadow: 0 0 8px rgba(232, 183, 255, 0.6);
-				z-index: 10;
 			}
 
 		#header > :first-child {
@@ -1984,7 +1983,7 @@ body.is-leaving #wrapper {
 	position: absolute;
 	inset: -15px;
 	background: rgba(232, 183, 255, 0.14);
-	filter: blur(35px);
+	filter: blur(0);
 	z-index: -1;
 	pointer-events: none;
 }
