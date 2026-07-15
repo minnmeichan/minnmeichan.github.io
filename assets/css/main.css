@@ -1401,6 +1401,17 @@ input, select, textarea {
 			border-radius: 50%;
 		}
 
+		/* 头像框 */
+
+		#header .logo::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: red;
+			z-index: 99;
+			pointer-events: none;
+		}
+
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
@@ -1953,15 +1964,4 @@ body.is-leaving #wrapper {
 #main article:hover {
 	transform: translateY(-5px);
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
-}
-
-/* 头像框 */
-
-#header .logo::before {
-	content: '';
-	position: absolute;
-	inset: 0;
-	background: red;
-	z-index: 99;
-	pointer-events: none;
 }
