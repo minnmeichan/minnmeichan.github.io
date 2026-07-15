@@ -1403,7 +1403,7 @@ input, select, textarea {
 
 		/* 头像框 */
 
-		#header .logo::before {
+		.logo::before {
 			content: '';
 			position: absolute;
 			inset: 0;
