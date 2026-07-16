@@ -1862,6 +1862,11 @@ body.is-leaving #wrapper {
 	border-radius: 12px;
 	padding: 1.5rem;
 	margin-bottom: 2rem;
+
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+
+	transform: translateZ(0);
 }
 
 .project-card h3 {
