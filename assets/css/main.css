@@ -1860,7 +1860,7 @@ body.is-leaving #wrapper {
 	position: relative;
 	overflow: hidden;
 
-	background: rgba(20,15,35,0.30);
+	background: rgba(20,15,35,0.25);
 
 	backdrop-filter: none;
 	-webkit-backdrop-filter: none;
@@ -1884,8 +1884,8 @@ body.is-preload .project-card {
 	position: absolute;
 	inset: 0;
 
-	background: rgba(232,183,255,0.08);
-	filter: blur(45px);
+	background: rgba(232,183,255,0.06);
+	filter: blur(60px);
 
 	border-radius: inherit;
 	z-index: 0;
