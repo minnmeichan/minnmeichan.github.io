@@ -1862,8 +1862,8 @@ body.is-leaving #wrapper {
 
 	background: rgba(20,15,35,0.25);
 
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
 
 	border: 1px solid rgba(232,183,255,0.25);
 	border-radius: 12px;
