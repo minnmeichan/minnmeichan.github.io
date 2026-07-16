@@ -1857,6 +1857,8 @@ body.is-leaving #wrapper {
 /* Works project card */
 
 .project-card {
+	position: relative;
+	overflow: hidden;
 	background: rgba(232, 183, 255, 0.08);
 	border: 1px solid rgba(232, 183, 255, 0.25);
 	border-radius: 12px;
@@ -1864,9 +1866,25 @@ body.is-leaving #wrapper {
 	margin-bottom: 2rem;
 
 	box-shadow:
-		0 8px 30px rgba(232,183,255,0.15),
-		inset 0 0 20px rgba(232,183,255,0.05);
+		0 8px 30px rgba(0,0,0,0.25),
+		inset 0 0 20px rgba(232,183,255,0.08);
 }
+
+.project-card::before {
+	content: "";
+	position: absolute;
+	inset: -20px;
+	background: inherit;
+	filter: blur(15px);
+	opacity: 0.6;
+	z-index: 0;
+}
+
+.project-card > * {
+	position: relative;
+	z-index: 1;
+}
+
 .project-card h3 {
 	color: #e8b7ff;
 }
