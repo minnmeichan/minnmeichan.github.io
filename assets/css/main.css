@@ -2004,6 +2004,7 @@ body.is-leaving #wrapper {
 }
 
 /* 悬停卡片上移 + 发光 */
+
 #main article {
   transition: opacity 0.325s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2013,8 +2014,7 @@ body.is-leaving #wrapper {
   box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
-/* ===== 测试块 1：恢复 backdrop-filter ===== */
-/* 如果测试失败，直接删掉本注释内的所有行即可回滚 */
+/* ===== 卡片毛玻璃效果 ===== */
 
 #main article {
     background-color: rgba(20, 20, 35, 0.45) !important;
@@ -2022,4 +2022,4 @@ body.is-leaving #wrapper {
     -webkit-backdrop-filter: blur(8px) !important;
 }
 
-/* ===== 测试块 1 结束 ===== */
+/* ===== 卡片毛玻璃效果结束 ===== */
