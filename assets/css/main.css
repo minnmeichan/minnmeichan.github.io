@@ -1982,12 +1982,12 @@ body.is-leaving #wrapper {
 
 /* 悬停卡片上移 + 发光 */
 #main article {
-  transition: opacity 0.325s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #main article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
 /* 卡片毛玻璃效果 */
