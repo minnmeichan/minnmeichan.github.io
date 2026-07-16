@@ -1393,7 +1393,6 @@ input, select, textarea {
 			border-radius: 50%;
 			overflow: visible;
 			position: relative;
-			box-shadow: 0 0 8px rgba(232, 183, 255, 0.35);
 		}
         
         #header .logo img {
@@ -1452,7 +1451,7 @@ input, select, textarea {
 			list-style: none;
 			padding-left: 0;
 			border: solid 1px #e8b7ff;
-			border-radius: 4px;
+			border-radius: 8px;
 		}
 
 			#header nav ul li {
@@ -1774,12 +1773,6 @@ input, select, textarea {
 
 /* Page transition */
 
-body.is-leaving #bg {
-	transform: scale(1.1);
-	filter: blur(5px);
-	transition: all 0.6s ease;
-}
-
 body.is-leaving #wrapper {
 	opacity: 0;
 	transition: opacity 0.4s ease;
@@ -1801,26 +1794,22 @@ body.is-leaving #wrapper {
 
 #header .logo {
 	box-shadow: 0 0 20px rgba(232, 183, 255, 0.5);
-	transition: 0.3s ease;
+	transition: box-shadow 0.3s ease;
 }
 
 #header .logo:hover {
 	box-shadow: 0 0 35px rgba(232, 183, 255, 0.8);
 }
 
-/* Site title glow */
-
-#header h1 {
-	text-shadow: 0 0 10px rgba(232, 183, 255, 0.45);
-}
-
 /* Anime glass effect */
 
-/* 顶部导航栏 */
+/* 顶部导航栏,Navigation rounded corners */
 #header nav ul {
 	background-color: rgba(232, 183, 255, 0.08);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 #header nav ul li a:hover {
@@ -1832,16 +1821,17 @@ body.is-leaving #wrapper {
 /* 项目按钮 */
 .button {
 	background-color: rgba(232, 183, 255, 0.08);
-	transition: 
+	transition:
 		background-color 0.2s ease,
 		box-shadow 0.2s ease,
 		transform 0.1s ease;
 	box-shadow: inset 0 0 0 1px #e8b7ff;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .button:hover {
 	background-color: rgba(232, 183, 255, 0.18);
-	box-shadow: 
+	box-shadow:
 		inset 0 0 0 1px #e8b7ff,
 		0 0 12px rgba(232,183,255,0.5);
 }
@@ -1870,13 +1860,6 @@ body.is-leaving #wrapper {
 
 	padding: 1.5rem;
 	margin-bottom: 2rem;
-
-	transition: backdrop-filter 0.3s ease;
-}
-
-body.is-preload .project-card {
-	backdrop-filter: none;
-	-webkit-backdrop-filter: none;
 }
 
 .project-card::before {
@@ -1903,8 +1886,8 @@ body.is-preload .project-card {
 }
 
 .project-card > * {
-	position:relative;
-	z-index:1;
+	position: relative;
+	z-index: 1;
 }
 
 .project-card h3 {
@@ -1978,24 +1961,8 @@ body.is-preload .project-card {
 	margin-bottom: 0;
 }
 
-.button {
-	-webkit-tap-highlight-color: transparent;
-}
-
-/* Navigation rounded corners */
-
-#header nav ul {
-	border-radius: 8px;
-	overflow: hidden;
-}
-
 /* Project card hover */
 
-#main article {
-	transition:
-		opacity 0.4s ease-in-out,
-		transform 0.3s ease;
-}
 #main article:hover {
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
@@ -2029,8 +1996,9 @@ body.is-preload .project-card {
 	pointer-events: none;
 }
 
-/* Home title spacing */
+/* Home title spacing,Site title glow */
 
 #header h1 {
 	letter-spacing: 0.15rem;
+	text-shadow: 0 0 10px rgba(232, 183, 255, 0.45);
 }
