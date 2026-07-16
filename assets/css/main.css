@@ -1862,8 +1862,6 @@ body.is-leaving #wrapper {
 	border-radius: 12px;
 	padding: 1.5rem;
 	margin-bottom: 2rem;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
 }
 
 .project-card h3 {
@@ -1994,13 +1992,4 @@ body.is-leaving #wrapper {
 
 #header h1 {
 	letter-spacing: 0.15rem;
-}
-
-.project-card {
-	transition-delay: 0.05s;
-}
-
-.project-card {
-	position: relative;
-	z-index: 2;
 }
