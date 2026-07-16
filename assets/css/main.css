@@ -1648,7 +1648,7 @@ input, select, textarea {
 			-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
-			transition: opacity 0.36s ease-in-out, transform 0.36s ease-in-out;
+			transition: opacity 0.36s ease-in-out, transform 0.3s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem;
 			position: relative;
 			width: 40rem;
@@ -1770,13 +1770,6 @@ input, select, textarea {
 /* =========================
    Custom Style
    ========================= */
-
-/* Page transition */
-
-body.is-leaving #wrapper {
-	opacity: 0;
-	transition: opacity 0.4s ease;
-}
 
 /* website record close button fix */
 
@@ -2004,10 +1997,6 @@ body.is-leaving #wrapper {
 }
 
 /* 悬停卡片上移 + 发光 */
-
-#main article {
-  transition: opacity 0.325s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 #main article:hover {
   transform: translateY(-5px);
