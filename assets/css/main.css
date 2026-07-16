@@ -1860,10 +1860,12 @@ body.is-leaving #wrapper {
 	position: relative;
 	overflow: hidden;
 
-	background: transparent;
+	background: rgba(20,15,35,0.25);
 
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+
+	transform: translateZ(0);
 
 	border: 1px solid rgba(232,183,255,0.25);
 	border-radius: 12px;
