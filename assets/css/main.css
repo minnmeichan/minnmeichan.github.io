@@ -1860,7 +1860,7 @@ body.is-leaving #wrapper {
 	position: relative;
 	overflow: hidden;
 
-	background: rgba(20,15,35,0.25);
+	background: rgba(20,15,35,0.30);
 
 	backdrop-filter: none;
 	-webkit-backdrop-filter: none;
