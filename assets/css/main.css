@@ -2018,8 +2018,8 @@ body.is-leaving #wrapper {
 
 #main article {
     background-color: rgba(20, 20, 35, 0.45) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
 }
 
 /* ===== 测试块 1 结束 ===== */
