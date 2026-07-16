@@ -1999,3 +1999,8 @@ body.is-leaving #wrapper {
 .project-card {
 	transition-delay: 0.05s;
 }
+
+.project-card {
+	position: relative;
+	z-index: 2;
+}
