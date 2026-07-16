@@ -1862,29 +1862,6 @@ body.is-leaving #wrapper {
 	margin-bottom: 2rem;
 }
 
-.project-card::before {
-	content: "";
-	position: absolute;
-	inset: 0px;
-
-	background: rgba(232,183,255,0.06);
-	filter: blur(60px);
-
-	border-radius: inherit;
-	z-index: 0;
-}
-
-.project-card::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-
-	background: rgba(255,255,255,0.025);
-
-	border-radius: inherit;
-	z-index: 0;
-}
-
 .project-card > * {
 	position: relative;
 	z-index: 1;
@@ -2013,13 +1990,10 @@ body.is-leaving #wrapper {
   box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
-/* ===== 测试块 1：恢复 backdrop-filter ===== */
-/* 如果测试失败，直接删掉本注释内的所有行即可回滚 */
+/* 卡片毛玻璃效果 */
 
 #main article {
     background-color: rgba(20, 20, 35, 0.45) !important;
     backdrop-filter: blur(8px) !important;
     -webkit-backdrop-filter: blur(8px) !important;
 }
-
-/* ===== 测试块 1 结束 ===== */
