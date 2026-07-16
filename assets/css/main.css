@@ -2012,3 +2012,14 @@ body.is-leaving #wrapper {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
+
+/* ===== 测试块 1：恢复 backdrop-filter ===== */
+/* 如果测试失败，直接删掉本注释内的所有行即可回滚 */
+
+#main article {
+    background-color: rgba(20, 20, 35, 0.45) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+}
+
+/* ===== 测试块 1 结束 ===== */
