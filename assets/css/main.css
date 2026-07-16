@@ -1863,6 +1863,7 @@ body.is-leaving #wrapper {
 	border-radius: 12px;
 	padding: 1.5rem;
 	margin-bottom: 2rem;
+}
 
 .project-card::before {
 	content: "";
@@ -1872,7 +1873,7 @@ body.is-leaving #wrapper {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	z-index: 0;
-	}
+}
 
 .project-card > * {
 	position: relative;
