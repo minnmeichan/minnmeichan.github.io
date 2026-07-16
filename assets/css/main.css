@@ -2023,3 +2023,23 @@ body.is-leaving #wrapper {
 }
 
 /* ===== 卡片毛玻璃效果结束 ===== */
+
+/* ===== 卡片初始隐藏 + 淡入淡出 ===== */
+
+#main article.is-hidden {
+    opacity: 0;
+    transition: none; /* 初始隐藏无过渡，防止加载时闪 */
+}
+
+/* 当卡片有 active 类且没有 is-hidden 类时，才应用过渡 */
+#main article.active:not(.is-hidden) {
+    opacity: 1;
+    transition: opacity 0.325s ease-in-out,
+                transform 0.325s ease-in-out;
+}
+
+/* ===== 悬停卡片上移 + 发光（慢速） ===== */
+#main article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
+}
