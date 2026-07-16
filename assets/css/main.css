@@ -1896,7 +1896,7 @@ body.is-preload .project-card {
 	position: absolute;
 	inset: 0;
 
-	background: rgba(255,255,255,0.06);
+	background: rgba(255,255,255,0.03);
 
 	border-radius: inherit;
 	z-index: 0;
