@@ -1865,13 +1865,18 @@ body.is-leaving #wrapper {
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 
-	transform: translateZ(0);
-
 	border: 1px solid rgba(232,183,255,0.25);
 	border-radius: 12px;
 
 	padding: 1.5rem;
 	margin-bottom: 2rem;
+
+	transition: backdrop-filter 0.3s ease;
+}
+
+body.is-preload .project-card {
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 }
 
 .project-card > * {
