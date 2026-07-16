@@ -1882,7 +1882,7 @@ body.is-preload .project-card {
 .project-card::before {
 	content: "";
 	position: absolute;
-	inset: 0;
+	inset: -20px;
 
 	background: rgba(232,183,255,0.06);
 	filter: blur(70px);
