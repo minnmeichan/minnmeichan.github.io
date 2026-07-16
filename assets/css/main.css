@@ -1859,7 +1859,7 @@ body.is-leaving #wrapper {
 .project-card {
 	position: relative;
 	overflow: hidden;
-	background: rgba(232, 183, 255, 0.04);
+	background: rgba(232, 183, 255, 0.025);
 	border: 1px solid rgba(232, 183, 255, 0.25);
 	border-radius: 12px;
 	padding: 1.5rem;
@@ -1867,16 +1867,16 @@ body.is-leaving #wrapper {
 
 	box-shadow:
 		0 8px 30px rgba(0,0,0,0.25),
-		inset 0 0 20px rgba(232,183,255,0.05);
+		inset 0 0 20px rgba(232,183,255,0.04);
 }
 
 .project-card::before {
 	content: "";
 	position: absolute;
 	inset: -20px;
-	background: inherit;
+	background: rgba(232,183,255,0.03);
 	filter: blur(15px);
-	opacity: 0.35;
+	opacity: 0.4;
 	z-index: 0;
 }
 
