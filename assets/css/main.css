@@ -1875,8 +1875,8 @@ body.is-leaving #wrapper {
 }
 
 body.is-preload .project-card {
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
 }
 
 .project-card > * {
