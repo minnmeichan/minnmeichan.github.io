@@ -2002,3 +2002,13 @@ body.is-leaving #wrapper {
 	letter-spacing: 0.15rem;
 	text-shadow: 0 0 10px rgba(232, 183, 255, 0.45);
 }
+
+/* 悬停卡片上移 + 发光 */
+#main article {
+  transition: opacity 0.325s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
+}
