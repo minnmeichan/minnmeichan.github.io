@@ -282,55 +282,51 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<!-- ===== 路线②测试块（延迟显示卡片） ===== -->
-<!-- 测试失败删除本块即可回滚 -->
-<script>
-(function() {
-    // 1. 先劫持所有 article，初始强制隐藏（即使 main.js 加了 active）
-    var articles = document.querySelectorAll('#main article');
-    articles.forEach(function(el) {
-        el.style.opacity = '0';
-        el.style.transition = 'opacity 0.2s ease';
-    });
+		<!-- ===== 卡片延迟显示 ===== -->
+		<script>
+			(function() {
+    			// 1. 先劫持所有 article，初始强制隐藏（即使 main.js 加了 active）
+    			var articles = document.querySelectorAll('#main article');
+    			articles.forEach(function(el) {
+        			el.style.opacity = '0';
+        			el.style.transition = 'opacity 0.2s ease';
+    			});
 
-    // 2. 等页面完全加载 + 两帧，让 GPU 合成层稳定
-    window.addEventListener('load', function() {
-        requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-                articles.forEach(function(el) {
-                    // 如果 main.js 已经加了 active 类，就让它显示出来
-                    if (el.classList.contains('active')) {
-                        el.style.opacity = '';
-                    }
-                });
-            });
-        });
-    });
+    			// 2. 等页面完全加载 + 两帧，让 GPU 合成层稳定
+    			window.addEventListener('load', function() {
+        			requestAnimationFrame(function() {
+            			requestAnimationFrame(function() {
+                			articles.forEach(function(el) {
+                    			if (el.classList.contains('active')) {
+                        			el.style.opacity = '';
+                    			}
+                			});
+            			});
+        			});
+    			});
 
-    // 3. 监听 main.js 后续切换卡片的事件（通过 MutationObserver 监视 active 类变化）
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            if (mutation.attributeName === 'class') {
-                var el = mutation.target;
-                if (el.classList.contains('active')) {
-                    // 延迟一帧再显示，让合成层先建立
-                    requestAnimationFrame(function() {
-                        el.style.opacity = '';
-                    });
-                } else {
-                    // 隐藏时瞬间隐藏，不延迟
-                    el.style.opacity = '0';
-                }
-            }
-        });
-    });
+    			// 3. 监听 main.js 后续切换卡片的事件（通过 MutationObserver 监视 active 类变化）
+    			var observer = new MutationObserver(function(mutations) {
+        			mutations.forEach(function(mutation) {
+            			if (mutation.attributeName === 'class') {
+                			var el = mutation.target;
+                			if (el.classList.contains('active')) {
+                    			requestAnimationFrame(function() {
+                        			el.style.opacity = '';
+                    			});
+                			} else {
+                    			el.style.opacity = '0';
+                			}
+            			}
+        			});
+    			});
 
-    articles.forEach(function(el) {
-        observer.observe(el, { attributes: true, attributeFilter: ['class'] });
-    });
-})();
-</script>
-<!-- ===== 测试块结束 ===== -->
+    			articles.forEach(function(el) {
+        			observer.observe(el, { attributes: true, attributeFilter: ['class'] });
+    			});
+			})();
+		</script>
+		<!-- ===== 卡片延迟显示结束 ===== -->
 
 			<script>
 				document.querySelector('.load-article').addEventListener('click', function() {
