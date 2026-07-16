@@ -1970,8 +1970,7 @@ body.is-preload .project-card {
 
 #main article {
 	transition:
-		opacity 0.4s ease-in-out,
-		transform 0.3s ease;
+		opacity 0.4s ease-in-out;
 }
 #main article:hover {
 	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
