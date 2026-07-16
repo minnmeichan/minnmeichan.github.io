@@ -1884,8 +1884,8 @@ body.is-preload .project-card {
 	position: absolute;
 	inset: 0;
 
-	background: rgba(232,183,255,0.05);
-	filter: blur(25px);
+	background: rgba(232,183,255,0.08);
+	filter: blur(30px);
 
 	border-radius: inherit;
 	z-index: 0;
