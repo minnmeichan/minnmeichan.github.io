@@ -1861,24 +1861,15 @@ body.is-leaving #wrapper {
 	overflow: hidden;
 
 	background: rgba(20,15,35,0.25);
+
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+
 	border: 1px solid rgba(232,183,255,0.25);
 	border-radius: 12px;
 
 	padding: 1.5rem;
 	margin-bottom: 2rem;
-}
-
-.project-card::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
-
-	background: rgba(255,255,255,0.03);
-
-	z-index:0;
 }
 
 .project-card > * {
