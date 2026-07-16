@@ -1873,10 +1873,10 @@ body.is-leaving #wrapper {
 .project-card::before {
 	content: "";
 	position: absolute;
-	inset: -20px;
+	inset: -25px;
 	background: rgba(232,183,255,0.03);
-	filter: blur(15px);
-	opacity: 0.4;
+	filter: blur(25px);
+	opacity: 0.3;
 	z-index: 0;
 }
 
