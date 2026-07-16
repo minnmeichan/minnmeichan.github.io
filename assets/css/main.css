@@ -1971,8 +1971,7 @@ body.is-preload .project-card {
 #main article {
 	transition:
 		opacity 0.4s ease-in-out,
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
+		transform 0.3s ease;
 }
 #main article:hover {
 	transform: translateY(-5px);
