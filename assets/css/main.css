@@ -1649,8 +1649,8 @@ input, select, textarea {
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.36s ease-in-out,
-            			transform 0.3s ease-in-out,
-            			box-shadow 0.35s ease-in-out;
+						transform 0.3s ease-in-out,
+						box-shadow 0.35s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem;
 			position: relative;
 			width: 40rem;
@@ -1770,22 +1770,22 @@ input, select, textarea {
 		}
 
 /* =========================
-   Custom Style
+   自定义样式
    ========================= */
 
-/* website record close button fix */
+/* 文章页面关闭按钮去下划线 */
 
 #website-record .close {
 	border-bottom: none !important;
 }
 
-/* Footer link remove underline */
+/* 页脚链接去下划线 */
 
 #footer .copyright a {
 	border-bottom: none;
 }
 
-/* Avatar anime glow */
+/* 头像发光效果 */
 
 #header .logo {
 	box-shadow: 0 0 20px rgba(232, 183, 255, 0.5);
@@ -1796,9 +1796,9 @@ input, select, textarea {
 	box-shadow: 0 0 35px rgba(232, 183, 255, 0.8);
 }
 
-/* Anime glass effect */
+/* ===== 磨砂玻璃质感效果 ===== */
 
-/* 顶部导航栏,Navigation rounded corners */
+/* 顶部导航栏及圆角 */
 #header nav ul {
 	background-color: rgba(232, 183, 255, 0.08);
 	backdrop-filter: blur(5px);
@@ -1839,7 +1839,7 @@ input, select, textarea {
 		0 0 18px rgba(232,183,255,0.7);
 }
 
-/* Works project card */
+/* 作品项目卡片 */
 
 .project-card {
 	position: relative;
@@ -1889,7 +1889,7 @@ input, select, textarea {
 	color: #e8b7ff;
 }
 
-/* Project title */
+/* 项目标题 */
 
 .project-title {
 	font-size: 1.25rem;
@@ -1898,7 +1898,7 @@ input, select, textarea {
 	text-shadow: 0 0 4px rgba(232, 183, 255, 0.3);
 }
 
-/* Work project spacing */
+/* 作品项目间距 */
 
 #work p {
 	margin-bottom: 1.5rem;
@@ -1908,7 +1908,7 @@ input, select, textarea {
 	margin-top: 1rem;
 }
 
-/* Article list card */
+/* 文章列表卡片 */
 
 .article-card {
 	background: rgba(232, 183, 255, 0.035);
@@ -1924,7 +1924,7 @@ input, select, textarea {
 	box-shadow: 0 0 12px rgba(232, 183, 255, 0.25);
 }
 
-/* Articles list style */
+/* 文章列表样式 */
 
 #articles h3 {
 	font-size: 1.15rem;
@@ -1945,7 +1945,7 @@ input, select, textarea {
 	margin-bottom: 1.5rem;
 }
 
-/* Article card spacing fix */
+/* 文章卡片间距修正 */
 
 .article-card h3 {
 	margin-top: 0;
@@ -1956,7 +1956,7 @@ input, select, textarea {
 	margin-bottom: 0;
 }
 
-/* Avatar frame */
+/* 头像边框装饰 */
 
 #header .logo::after {
 	content: "";
@@ -1968,7 +1968,7 @@ input, select, textarea {
 	transform: translateX(-1px) translateY(-5px) scale(1.56);
 }
 
-/* Title area soft glow */
+/* 标题区域柔光 */
 
 #header .content {
 	position: relative;
@@ -1985,7 +1985,7 @@ input, select, textarea {
 	pointer-events: none;
 }
 
-/* Home title spacing,Site title glow */
+/* 主页标题的间距与发光 */
 
 #header h1 {
 	letter-spacing: 0.15rem;
@@ -1999,7 +1999,7 @@ input, select, textarea {
   box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
 }
 
-/* ===== 卡片毛玻璃效果 ===== */
+/* ===== 卡片磨砂玻璃效果 ===== */
 
 #main article {
     background-color: rgba(20, 20, 35, 0.45) !important;
@@ -2007,4 +2007,4 @@ input, select, textarea {
     -webkit-backdrop-filter: blur(8px) !important;
 }
 
-/* ===== 卡片毛玻璃效果结束 ===== */
+/* ===== 卡片磨砂玻璃效果结束 ===== */
