@@ -1956,12 +1956,6 @@ input, select, textarea {
 	margin-bottom: 0;
 }
 
-/* Project card hover */
-
-#main article:hover {
-	box-shadow: 0 10px 30px rgba(232, 183, 255, 0.25);
-}
-
 /* Avatar frame */
 
 #header .logo::after {
